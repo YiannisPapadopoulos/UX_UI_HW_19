@@ -1,0 +1,338 @@
+* {
+    padding: 0;
+    margin: 0;
+    color: #595959;
+    text-decoration: none;
+}
+html {
+    scroll-behavior: smooth;
+}  
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 7vw;
+    background-color: white;
+    position: fixed;
+    z-index: 9999;
+    top: 0%;
+    box-shadow: 0 20px 20px -20px #78909c;
+    border-bottom: 2px solid  #ffd600;
+  }
+  .imgcontainer {
+      width: 10%;
+      padding: 1%;
+  }
+  #logo {
+      width: 40%;
+  }
+  nav {
+    position: relative;
+  }
+  nav ul{
+    display: flex;
+    width: 400px;
+    justify-content: space-evenly;
+  }
+  nav ul li {
+    list-style: none;
+    color:#595959;
+    font-family: Crimson Pro;
+    font-size: 20px;
+    font-weight: bolder;
+    cursor:pointer;
+    margin: 0%;
+    padding: 0%;
+  }
+  a:hover {
+      color: #3fafff;  
+  }
+  .underline {
+    background: #ffd600;
+    height: 2px;
+    position: relative;
+    top: 23px;
+    transition: all 0.5s;
+} 
+#hed{
+    border: 1px solid #ffd600;
+  } 
+#aboutme {
+    display: flex;
+    padding: 10% 0% 5% 0%;
+   
+}
+#illocontainer {
+    display: flex;
+    flex-direction: column;    
+}
+#imgcontainer {
+    width: 40%;
+}
+#imgcontainer img {
+   width: 100%;
+   margin-left: 38%;
+   margin-top: 20%;
+}
+h1 {
+    font-family: Crimson Pro;
+    font-size: 300%; 
+    margin-bottom: 3%;
+}
+p {
+    font-family: Roboto Mono;
+}
+#quote {
+    font-family: Crimson Pro;
+    font-weight: normal;
+    font-style: normal;
+    font-size: 20px;
+    margin-left: 41%;
+    margin-bottom: -10%;
+    margin-top: 1%;
+    width: 21%;
+    z-index: 100;
+}
+span {
+    font-style: italic;
+    text-align: right;
+    font-size: 18px;
+    font-weight: normal;
+}
+#textcontainer {
+    width: 60%;
+    margin-left: -30%;
+    margin-right: 20%;
+}
+#findmore {
+    font-family: Roboto Mono;
+    font-size: 14px;
+}
+ul li {
+    display: inline-block;
+    font-family: Roboto Mono;
+    margin-top: 1%;
+    padding-right: 5%;
+    font-size: 18px;
+}
+a:hover {
+    color: #3fafff;  
+}
+hr {
+    border: 1px solid #ffd600;
+} 
+#skillstools {
+    display: grid;
+    grid-template-columns: 80% 2px 19%;
+    grid-template-rows: 19% 80% 80%;
+    grid-template-areas: 
+    "title ruller columntitle"
+    "columncontainer ruller column";
+}
+#title {
+    display:grid;
+    grid-template-columns: 30% 70%;
+    grid-template-areas: "headline subtitle";
+    padding: 5%;
+    margin-left: 1%;  
+}
+#headline {
+    grid-area: headline;
+}
+#subtitle {
+    grid-area: subtitle;
+    width: 50%;
+    margin-left: -14%;
+}
+#columncontainer {
+    display:grid;
+    grid-template-columns: 25% 25% 25%;
+    grid-template-areas: "subcolumn1 subcolumn2 subcolumn3";
+    justify-content: space-evenly;
+    margin-top: 5%;
+}
+#subcolumn1 {
+    grid-area: subcolumn1;
+}
+#subcolumn2 {
+    grid-area: subcolumn2;
+}
+#subcolumn3 {
+    grid-area: subcolumn3;
+}
+span {
+    font-family: Crimson Pro;
+}
+#ruller {
+    grid-area: ruller;
+    background-color: #ffd600;
+}
+#columntitle {
+    grid-area: columntitle;
+    margin-left: 15%;
+    margin-top: 20%;   
+}
+#column {
+    grid-area: column;
+    margin-left: 15%;
+    margin-top: 20%;   
+}
+@media only screen and (max-device-width : 480px) {
+    header {
+        width: 100vw;  
+        border-bottom: 2px solid #ffd600;
+        position: fixed;
+        z-index: 9999;
+        top: 0%;
+        left: 0;
+    }
+    header div {
+        padding: 10px;
+        width: 10%;
+        margin-right: -15%;
+    }
+    #mobid {
+        display: flex;
+    }
+    #logo {
+        width: 35px;
+    }
+    nav {
+        width: 50vw;
+        margin: auto;
+    }
+    #flexelement {
+        display: flex;
+        justify-content: space-around;
+    }
+    nav ul li {
+        padding: 5%;
+        font-family: Crimson Pro;
+        font-size: 20px;
+        font-weight: bolder;
+    }
+    #aboutme {
+        display: flex;
+        flex-direction: column;
+        top: 0%; 
+    }
+    #illocontainer {
+        margin-left: 10%;
+    }
+    #quote {
+        font-family: Crimson Pro;
+        font-size: 18px;
+        margin-left: 48%;
+        margin-bottom: -25%;
+        margin-top: 15%;
+        width: 50%;
+        z-index: 100;
+    }
+    span {
+        font-size: 16px;
+    }
+    #imgcontainer {
+        width: 65%;
+        top: 0%;
+    }
+    #imgcontainer img {
+       width: 100%;
+       margin-left: 7%;
+       margin-top: 25%; 
+    }
+    #textcontainer {
+        width: 90%;
+        margin: auto; 
+        padding-top: 5%;  
+    } 
+    #textcontainer h1 {
+        font-size: 11.5vw;
+        padding: 5%;
+    }
+    #skillstools {
+        display: grid;
+        grid-template-rows: 10% 70% 2px 5% 15%;
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+        "title" 
+        "columncontainer" 
+        "ruller" 
+        "columntitle" 
+        "column";
+    }
+    #title {
+        display:grid;
+        grid-template-columns: 40% 60%; 
+        grid-template-areas: "headline subtitle";
+
+        }
+        #headline {
+            grid-area: headline;
+            font-size: 11.5vw;
+            line-height: 80%;
+        }
+        #subtitle {
+            grid-area: subtitle;
+            width: 100%;
+            padding-left: 5vw;  
+        }    
+    #columncontainer {
+    display:grid;
+    grid-template-rows: 1fr 1/2fr 1fr;
+    grid-template-columns: 1fr;
+    grid-template-areas: 
+    "subcolumn1" 
+    "subcolumn2" 
+    "subcolumn3";
+    padding: 5%;
+    margin-right: 10%;
+    }
+    #subcolumn1 #subcolumn2 #subcolumn3 {
+        width: 95%; 
+    }
+    #subcolumn1 {
+       grid-area: subcolumn1;
+       border-bottom: 1px solid #ffd600;
+       margin-bottom: 5%;
+    }
+    #subcolumn2 {
+        grid-area: subcolumn2;
+        border-bottom: 1px solid #ffd600;
+        margin-bottom: 5%;
+     }
+    #subcolumn2 span {
+        font-weight: normal;
+    }
+    #columntitle {
+        grid-area: columntitle;  
+        text-align: center; 
+        width: 92vw; 
+        margin: 0%;
+        padding: 3% 0 3% 0;
+    }
+    #column {
+        grid-area: column;
+        width: 44vw; 
+        margin: auto;
+        padding: 4%; 
+    }
+}
+footer {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 5%;
+}
+.footer-part2 a {
+    font-family: Roboto Mono;
+    font-size: 17px;
+}
+.footer-part3 {
+    width: 10%;
+}
+#footer-img {
+    width: 50%;
+}
+
+
+

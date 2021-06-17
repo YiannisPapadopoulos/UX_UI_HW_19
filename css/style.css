@@ -1,0 +1,155 @@
+* {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    color: #595959;
+}
+html {
+    scroll-behavior: smooth;
+}  
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 7vw;
+    background-color: white;
+    position: fixed;
+    z-index: 9999;
+    top: 0%;
+    box-shadow: 0 20px 20px -20px #78909c;
+    border-bottom: 2px solid  #ffd600;
+  }
+  .imgcontainer {
+      width: 10%;
+      padding: 1%;
+  }
+  #logo {
+      width: 40%;
+  }
+  nav {
+    position: relative;
+  }
+  nav ul{
+    display: flex;
+    width: 400px;
+    justify-content: space-evenly;
+  }
+  nav ul li {
+    list-style: none;
+    color:#595959;
+    font-family: Crimson Pro;
+    font-size: 20px;
+    font-weight: bolder;
+    cursor:pointer;
+    margin: 0%;
+    padding: 0%;
+  }
+  a:hover {
+      color: #3fafff;  
+  }
+  .underline {
+    background: #ffd600;
+    height: 2px;
+    position: relative;
+    top: 23px;
+    transition: all 0.5s;
+} 
+.hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.imagcontainer {
+    width: 50%;
+}
+#hero {
+    width: 50%;
+    padding: 23% 20% 10% 40%;
+    margin-left: 10%;
+}
+.hero-text {
+    width: 50%; 
+    padding: 16% 20% 10% 7%;   
+}
+h1 {
+    font-family: Crimson Pro;
+    font-size: 300%; 
+    line-height: 80%;
+    margin-bottom: 3%;
+}
+p {
+    font-family: Roboto Mono;
+}
+.email {
+    margin-top: 2%;
+}
+#email {
+    font-family: Roboto Mono;
+    font-size: 17px;
+}
+div .button {
+    width: 210px;
+}
+.button {
+    margin-top: 30%;
+    font-family: Roboto Mono;
+    font-size: 16px;
+    font-weight: bolder;
+    background-color: white;
+    padding: 2%;
+    border: 3px solid #ff9494; 
+    width: 210px;  
+}
+.button:hover {
+    box-shadow: 10px 10px #ff9494;
+    transition: 0.5s;
+}
+#her {
+    border: 1px solid #ffd600;
+}
+.deskimage-container {
+    width: 40%;
+    float: left;
+    padding-left: 5%;
+}
+.Project-image {
+    width: 100%;
+}
+.project-details {
+    overflow: hidden;
+    padding-left: 5%;
+    margin-bottom: 7%;
+}
+.h1 {
+    float: left;
+    padding-left: 3.5%;
+}
+.p {
+    overflow: hidden;
+    padding-left: 20px;
+    padding-top: 0.5%;
+}
+.section-title {
+    margin: 5%;
+}
+div #button2 {
+    width: 183px;
+    margin-top: 10%;
+    margin-bottom: 10px;
+}
+#button2:hover {
+    box-shadow: 10px 10px #ff9494;
+    transition: 0.5s;
+}
+footer {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 5%;
+}
+.footer-part3 {
+    width: 10%;
+}
+#footer-img {
+    width: 50%;
+}
