@@ -6,16 +6,23 @@
 }
 html {
     scroll-behavior: smooth;
+    padding: 0%;
+    margin: 0%;
 }  
+body {
+    width: 100%;
+    overflow-x: hidden;
+}
 header{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 7vw;
+    height: 15vh;
     background-color: white;
     position: fixed;
     z-index: 9999;
     top: 0%;
+    width: 100vw;
     box-shadow: 0 20px 20px -20px #78909c;
     border-bottom: 2px solid  #ffd600;
   }
@@ -40,19 +47,11 @@ header{
     font-family: Crimson Pro;
     font-size: 20px;
     font-weight: bolder;
-    cursor:pointer;
     margin: 0%;
     padding: 0%;
   }
   a:hover {
       color: #0079D0;  
-  }
-  .underline {
-    background: #ffd600;
-    height: 2px;
-    position: relative;
-    top: 23px;
-    transition: all 0.5s;
 } 
 .hero {
     display: flex;
@@ -114,7 +113,7 @@ div .button {
     border: 1px solid #ffd600;
 }
 .deskimage-container {
-    width: 40%;
+    width: 45%;
     float: left;
     padding-left: 5%;
 }
@@ -127,16 +126,19 @@ div .button {
     margin-bottom: 7%;
 }
 .h1 {
-    float: left;
     padding-left: 3.5%;
+    width: 20vw;
 }
 .p {
-    overflow: hidden;
-    padding-left: 20px;
-    padding-top: 0.5%;
+    margin-left: 0vw;
+    width: 20vw;
+    line-height: 2vw;
 }
 .section-title {
     margin: 5%;
+    display: flex;
+    justify-content: flex-start;
+    width: 50vw;
 }
 div #button2 {
     width: 183px;
@@ -153,6 +155,31 @@ footer {
     align-items: center;
     padding: 5%;
 }
+.footer-part12 {
+    display: flex;
+}
+#email2 {
+    font-family: Roboto Mono;
+    font-size: 17px;
+    background-color: #FFE666;
+    padding: auto;
+}
+.footer-part1 h1 {
+    margin-bottom: 20px;
+}
+.footer-part1 p {
+    width: 30vw;
+}
+.footer-part2 {
+    width: 40vw;
+    margin-left: 10vw;
+}
+.footer-part2 ul {
+    list-style-type: none;
+}
+.footer-part2 ul li {
+    margin-bottom: 0.5vw;
+}
 .footer-part2 a {
     background-color: #FFE666;
     position: relative;
@@ -166,5 +193,238 @@ footer {
     width: 10%;
 }
 #footer-img {
+    width: 50px;
+}
+@media only screen and (max-width: 767px) { 
+    /*nav*/
+    header {
+        height: 10vw;
+        width: 100vw;
+    }
+    .imgcontainer {
+        margin-right: -10vw;
+    } 
+    #logo {
+        width: 50%;
+    }
+    #flexelement {
+        display: flex;
+        justify-content: space-around;
+    }
+    nav ul li {
+        font-family: Crimson Pro;
+        font-size: 20px;
+        font-weight: bolder;
+        margin-left: -5vw;
+    }
+     /*hero*/
+    .hero {
+        width: 100%;
+        display: block;
+        margin-top: -10px;
+    } 
+    #hero {
+        width: 50vw;
+        margin: auto;
+        padding-left: 25vw;
+        margin-top: -10vw;
+    }
+    .hero-text {
+        width: 100%; 
+        margin: auto;
+        padding: 0%;
+    }
+    .hero-text {
+        width: 60vw;
+    }
+    .hero-text h1 {
+        text-align: center;
+    }
+    .hero-text p {
+        text-align: center;
+    }
+    .hero-text .email {
+        margin-top: 10px auto;
+        text-align: center;
+    }
+    .button {
+        width: 100%;
+        margin: 10vw auto;
+    }
+     /*Projects*/
+    #projects {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .section-title {
+        display: flex;
+        padding-top: 15px;
+        padding-bottom: 30px;
+        text-align: center;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .h1 {
+        width: 100vw;
+        padding-left: 0vw;
+        margin-left: -5vw;
+    }
+    .p {
+        position: relative;
+        padding-top: 0.5%;
+        line-height: 24px;
+        margin-left: -5vw;
+        width: 100vw;
+    }
+    .deskimage-container {
+        position: relative;
+        width: 90vw;
+        top: 50%;
+        left: 50%;
+        margin-left: -50vw;
+        margin-bottom: 15px;
+    }
+    .project-details {
+        text-align: center;
+        width: 100vw;
+        margin-left: -5vw;
+    }
+    .project-details p {
+        text-align: center;
+    
+    }
+    #button2 {
+        margin-top: 10%;
+        margin-bottom: 10%;
+    }
+     /*footer*/
+    footer {
+        flex-direction: column;
+        padding-left: 10%;
+    }
+    .footer-part1 {
+        float: left;
+    }
+    .footer-part2 {
+        overflow: hidden;
+    }
+    .footer-part1 h1 {
+        margin-bottom: 20px;
+        width: 35vw;
+    }
+    .footer-part1 p {
+        width: 40vw;
+    }
+    .footer-part2 {
+        padding-left: 5vw;
+    }
+    .footer-part2 ul {
+        margin-top: 7vw;
+        list-style-type: none;
+    }
+    .footer-part2 ul li {
+        margin-bottom: 1vw;
+    }
+    .footer-part3 {
+        width: 50%;
+        margin: auto;
+        transform: rotate(270deg);
+        margin-top: -20vw;
+    }
+    }
+@media only screen and (max-width: 480px) {
+header {
+    height: 50px;
+    width: 100%;
+}
+.imgcontainer {
+    padding: 10px;
+} 
+#logo {
     width: 50%;
+}
+#flexelement {
+    display: flex;
+    justify-content: space-around;
+}
+nav ul li {
+    font-family: Crimson Pro;
+    font-size: 20px;
+    font-weight: bolder;
+}
+ /*hero*/
+.hero {
+    padding-top: 10vw;
+}
+
+/*Projects*/
+#projects {
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.section-title {
+    padding-top: 15px;
+    padding-bottom: 30px;
+    text-align: center;
+}
+.h1 {
+    float: none;  
+}
+.p {
+    padding-top: 0.5%;
+    line-height: 24px;
+}
+.deskimage-container {
+    position: relative;
+    width: 90vw;
+    top: 50%;
+    left: 50%;
+    margin-left: -50vw;
+    margin-bottom: 15px;
+}
+.project-details {
+    text-align: center;
+    width: 100vw;
+    margin-left: -5vw;
+}
+.project-details p {
+    text-align: center;
+}
+#button2 {
+    margin-top: 10%;
+    margin-bottom: 10%;
+}
+ /*footer*/
+footer {
+    display: block;
+    padding-left: 10%;
+    margin: auto;
+}
+.footer-part12 {
+    flex-direction: column;
+}
+.footer-part1 {
+    float: none;
+}
+.footer-part1 h1 {
+    margin-bottom: 20px;
+    width: 100vw;
+}
+.footer-part1 p {
+    width: 60vw;
+}
+.footer-part2 {
+    margin-left: -4vw;
+    width: 100vw;
+}
+.footer-part3 {
+    width: 50%;
+    margin: auto;
+    transform: rotate(270deg);
+    margin-top: -20vw;
+}
+
 }

@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
     <title>Yiannis-Portfolio</title>
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Crimson+Pro:wght@700&display=swap" rel="stylesheet">
@@ -14,12 +14,11 @@
 <body>
     <header>
         <div class="imgcontainer">
-            <a href="https://yiannispapadopoulos.github.io/UX_UI_HW_19/"><img src="../UX_UI_HW_19/images/logo_color.png" id='logo'></a>
+            <a href="../UX_UI_HW_19/index.html"><img src="../UX_UI_HW_19/images/logo_color.png" id='logo'></a>
         </div>
         <nav>
-            <div class="underline"></div>
             <ul id="flexelement">
-            <li><a href="">Home</a></li>
+            <li><a href="../UX_UI_HW_19/index.html">Home</a></li>
             <li><a href="../UX_UI_HW_19/about.html">About</a></li>
             <li><a href="../UX_UI_HW_19/images/yiannis_papadopoulos_cv.pdf" target="_blank">Resume</a></li>
             </ul>
@@ -27,30 +26,33 @@
           </header>
           <section class="hero">
             <div id="imagcontainer">
-            <img src="../UX_UI_HW_19/images/hero_illo.png" id="hero">
+                <picture>
+                    <source media="(max-width: 767px)" srcset="../UX_UI_HW_19/images/hero_illo_mob.png">
+                    <img src="../UX_UI_HW_19/images/hero_illo.png" id="hero">
+                </picture>
             </div>
             <div class="hero-text">
-            <h1>Hey, I'm Yiannis</h1>
-            <p>graphic designer & graduate UX-UI<br> 
-               designer. I love to do research,<br> 
-               learn and keep the team together!
-            </p>
-            <div class="email">
-            <a href="mailto:iann2048@gmail.com" id="email">iann2048@gmail.com</a>
-            </div>
-            <div class="button"><a href="#projects">CHECK OUT MY PROJECTS</a></div>
+              <h1>Hey, I'm Yiannis</h1>
+              <p>graphic designer & graduate UX-UI
+                 designer. I love to do research,
+                 learn and keep the team together!
+              </p>
+              <div class="email">
+              <a href="mailto:iann2048@gmail.com" id="email">iann2048@gmail.com</a>
+              </div>
+              <div class="button"><a href="#projects">CHECK OUT MY PROJECTS</a>
+              </div>
         </div>
     </section>
     <hr id="her">
     <section id="projects">
         <div class="section-title">
             <div class="h1">
-                <h1>UX & UI<br> 
-                Projects</h1>
+                <h1>UX & UI Projects</h1>
             </div>
             <div class="p">
-                <p>I’d love to share my work<br> 
-                   with you. Your feedback is<br> 
+                <p>I’d love to share my work
+                   with you. Your feedback is
                    always welcome.
                </p>
             </div>
@@ -58,41 +60,45 @@
         <div class="deskimage-container"><img src="../UX_UI_HW_19/images/desk_mockup.png" class="Project-image">
         </div>
             <div class="project-details">
-            <p>
+                <p>
                 Apr 27 - May 15<br>
                 Group project<br><br>
                 
                 <b>Responsive Website Redesign</b><br>
                 
-                We Care for Paws Foundation website suffers<br>
-                from various issues. How might we help<br> 
+                We Care for Paws Foundation website suffers from various issues.<br> How might we help
                 its users find easily an animal to adopt?<br><br>
                 
                 <i>Role: UX & UI Designer</i>      
-            </p>
+                </p>
             <div class="button" id="button2"><a href="https://yiannispapadopoulos.github.io/UX_UI_HW_20/" target="_blank">READ THE CASE STUDY</a></div>
             </div>
         <hr id="her">
     </section>
     <footer>
+        <div class="footer-part12">
         <div class="footer-part1">
             <h1>Let's Connect</h1>
             <p>
-                If you are interested in my work, or you<br>
-                would like to know more about my<br>
+                If you are interested in my work, or you
+                would like to know more about my
                 background please feel free to reach out!<br>
             </p>
         </div>
-        <div class="footer-part2">  
-            <div class="email">
-            <a href="mailto:iann2048@gmail.com" id="email">iann2048@gmail.com</a>
-            </div><br>
-            <p><i>or find me online</i></p><br>
-            <p>
+        <div class="footer-part2"> 
+            <ul>
+            <li class="email">
+            <a href="mailto:iann2048@gmail.com" id="email2">iann2048@gmail.com</a>
+            </li>
+            <li><p><i>or find me online</i></p></li>
+            <li><p>
                 <a href="https://www.linkedin.com/in/yiannsp/" target="_blank" rel="noopener noreferrer">Linkedin</a>
                 <a href="https://codepen.io/YiannisP/live/ZRBPwL" target="_blank" rel="noopener noreferrer">Codepen</a>
                 <a href="https://www.instagram.com/yian2isp/" target="_blank" rel="noopener noreferrer">Instagram</a>
-            </p>
+                </p>
+            </li>
+            </ul> 
+        </div>
         </div>
         <div class="footer-part3">
         <img src="../UX_UI_HW_19/images/connect.png" id="footer-img">
