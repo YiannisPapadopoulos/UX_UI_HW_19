@@ -3,7 +3,6 @@
     margin: 0;
     text-decoration: none;
     color: #595959;
-    box-sizing: border-box;
 }
 html {
     scroll-behavior: smooth;
@@ -28,12 +27,12 @@ header{
     border-bottom: 2px solid  #ffd600;
   }
   .imgcontainer {
-      width: 10%;
-      padding: 1%;
-  }
-  #logo {
-      width: 40%;
-  }
+    width: 10vw;
+    padding: 1vw;
+}
+#logo {
+    width: 50px;
+}
   nav {
     position: relative;
   }
@@ -43,17 +42,18 @@ header{
     justify-content: space-evenly;
   }
   nav ul li {
+    list-style: none;
     color:#595959;
     font-family: Crimson Pro;
+    background-color: transparent;
     font-size: 20px;
     font-weight: bolder;
     margin: 0%;
     padding: 0%;
-    background-color: white;
   }
   a:hover {
       color: #0079D0;  
-  } 
+} 
 #aboutme {
     display: flex;
     padding: 10% 0% 5% 0%;
@@ -423,16 +423,23 @@ nav ul li {
     }
     .footer-part2 {
         padding-left: 0vw;
+        margin-top: 0vw;
     }
     .footer-part2 ul {
         margin-top: 7vw;
         list-style-type: none;
     }
     ul .social {
-        margin-top: 0vw;
+        margin-top: -1vw;
     }
     .footer-part12 a {
         display: inline block;
+    }
+    .footer-part2 ul li {
+        margin-bottom: -1vw;
+    }
+    .footer-part2 ul li ul li {
+        margin-right: 0vw;
     }
     .footer-part3 {
         width: 50%;
@@ -446,15 +453,15 @@ nav ul li {
 }
 @media only screen and (max-width : 480px) {
      /*nav*/
-header {
-    height: 10vw;
-    width: 100vw;
+     header {
+        height: 50px;
+        width: 100%;
     }
     .imgcontainer {
-        margin-right: -10vw;
+        padding: 10px;
     } 
     #logo {
-        width: 50%;
+        width: 30px;
     }
     #flexelement {
         display: flex;
@@ -464,8 +471,8 @@ header {
         font-family: Crimson Pro;
         font-size: 20px;
         font-weight: bolder;
-        margin-left: -5vw;
     }
+     /*about*/
         #aboutme {
             display: flex;
             flex-direction: column;
@@ -624,6 +631,17 @@ margin-top: -5vw;
 .footer-part2 {
     margin-left: 0vw;
     width: 100vw;
+}
+ul .social {
+    margin-top: -5vw;
+}
+.footer-part2 ul li p {
+    margin-bottom: -2vw;
+    margin-top: -2vw;
+    font-size: 15px;
+}
+.footer-part2 ul li ul li {
+    padding-bottom: 5vw;
 }
 .footer-part3 {
     width: 50%;
